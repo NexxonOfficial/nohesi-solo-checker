@@ -14,7 +14,15 @@ As the title states, a locally hosted website that you can utilise to see what y
 <img src="https://i.imgur.com/2zxDin5.png" width=400> <img src="https://i.imgur.com/bbY4JZH.png" width=400> <img src="https://i.imgur.com/dqTxLXW.png" width=400> <img src="https://i.imgur.com/WvL75n8.png" width=400> <img src="https://i.imgur.com/Fisnb0C.png" width=400>
 
 ## 💻 How To Download / Use The System
-TODO
+You have two options in how you can run this on your local machine, as per my recommendations. If you know other ways, feel free to use them.
+
+1) Via Node.js + NPM. See their documentation on how to set it up, fairly easy as long as you put your mind to it. View the docs [here.](https://www.npmjs.com/package/http-server)
+
+2) Via Python, probably the more complex out of the two but still an easy solution. [This tutorial](https://www.digitalocean.com/community/tutorials/python-simplehttpserver-http-server) shows how to do it, and is relatively easy. Just navigate to the folder where you installed the build files and select on the index.html file.
+
+I did attempt to make it so you simply opened the index.html file and it worked like that, however CORS policy got in the way of the fetch request to No Hesi's API since it's executing via file://, therefore it simply isn't possible to do it that way. So, the two options above are likely your best bets if you want to run this.
+
+Best of luck!
 
 ## ⚖️ Disclaimer
 This project is an **unofficial fan-made tool** and is **not affiliated with, endorsed by, or in any way officially connected to No Hesi, its developers, or any of its official entities**.
