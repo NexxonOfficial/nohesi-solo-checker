@@ -1,5 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import logoBlack from '/NoHesiMinimal-Black.svg'
+  import logoGrey from '/NoHesiMinimal-Grey.svg'
+  import collapseIcon from '/Collapse.svg'
 
   interface ProxyMember {
       steamId: string,
@@ -487,26 +490,26 @@
           {@const sps = singlePositionShow}
           <div class="position-row force-display">
               <div class="row header-row">
-                  <button on:click={HandleDropDownRequest}><img src="/Collapse.svg" alt="collapse-arrow"></button>
+                  <button on:click={HandleDropDownRequest}><img src={collapseIcon} alt="collapse-arrow"></button>
                   <div class="position-icon">
                       {#if playerList.findIndex((x) => x.steamid == sps.steamid) + 1 == 1}
                           <div class="holder first">
-                              <img src="/NoHesiMinimal-Black.svg" alt="nohesi-position-logo-black">
+                              <img src={logoBlack} alt="nohesi-position-logo-black">
                               <p>#{1}</p>
                           </div>
                       {:else if playerList.findIndex((x) => x.steamid == sps.steamid) + 1 == 2}
                           <div class="holder second">
-                              <img src="/NoHesiMinimal-Black.svg" alt="nohesi-position-logo-black">
+                              <img src={logoBlack} alt="nohesi-position-logo-black">
                               <p>#{2}</p>
                           </div>
                       {:else if playerList.findIndex((x) => x.steamid == sps.steamid) + 1 == 3}
                           <div class="holder third">
-                              <img src="/NoHesiMinimal-Black.svg" alt="nohesi-position-logo-black">
+                              <img src={logoBlack} alt="nohesi-position-logo-black">
                               <p>#{3}</p>
                           </div>
                       {:else}
                           <div class="holder">
-                              <img src="/NoHesiMinimal-Grey.svg" alt="nohesi-position-logo-grey">
+                              <img src={logoGrey} alt="nohesi-position-logo-grey">
                               <p>#{playerList.findIndex((x) => x.steamid == sps.steamid) + 1}</p>
                           </div>
                       {/if}
@@ -574,26 +577,26 @@
       {#each playerList as player}
           <div class="position-row">
               <div class="row header-row">
-                  <button on:click={HandleDropDownRequest}><img src="/Collapse.svg" alt="collapse-arrow"></button>
+                  <button on:click={HandleDropDownRequest}><img src={collapseIcon} alt="collapse-arrow"></button>
                   <div class="position-icon">
                       {#if playerList.findIndex((x) => x.steamid == player.steamid) + 1 == 1}
                           <div class="holder first">
-                              <img src="/NoHesiMinimal-Black.svg" alt="nohesi-position-logo-black">
+                              <img src={logoBlack} alt="nohesi-position-logo-black">
                               <p>#{1}</p>
                           </div>
                       {:else if playerList.findIndex((x) => x.steamid == player.steamid) + 1 == 2}
                           <div class="holder second">
-                              <img src="/NoHesiMinimal-Black.svg" alt="nohesi-position-logo-black">
+                              <img src={logoBlack} alt="nohesi-position-logo-black">
                               <p>#{2}</p>
                           </div>
                       {:else if playerList.findIndex((x) => x.steamid == player.steamid) + 1 == 3}
                           <div class="holder third">
-                              <img src="/NoHesiMinimal-Black.svg" alt="nohesi-position-logo-black">
+                              <img src={logoBlack} alt="nohesi-position-logo-black">
                               <p>#{3}</p>
                           </div>
                       {:else}
                           <div class="holder">
-                              <img src="/NoHesiMinimal-Grey.svg" alt="nohesi-position-logo-grey">
+                              <img src={logoGrey} alt="nohesi-position-logo-grey">
                               <p>#{playerList.findIndex((x) => x.steamid == player.steamid) + 1}</p>
                           </div>
                       {/if}
