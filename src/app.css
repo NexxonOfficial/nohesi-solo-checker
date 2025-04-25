@@ -1,0 +1,21 @@
+html {
+    --body-main-color: #08060a;
+    background-color: var(--body-main-color);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-main-color);
+}
+
+@font-face {
+    font-family: 'Inter Tight';
+    src: url('/fonts/INTERTIGHT-VARIABLEFONT_WGHT.TTF');
+}
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url('/fonts/RobotoFlex.ttf');
+}
